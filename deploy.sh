@@ -1,6 +1,9 @@
 #!/bin/sh
 
-$1 `which composer` update
+if [ -e composer.json ]
+then
+    $1 `which composer` update
+fi
 
 BASEDIR=$(dirname "$0")/../../..
 
