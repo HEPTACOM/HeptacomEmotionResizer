@@ -1,10 +1,17 @@
 {
   "name": "heptacom/emotion-resizer",
+  "authors": [
+    {
+      "name": "Julian Krzefski",
+      "email": "krzefski@heptacom.de"
+    }
+  ],
   "keywords": [
     "shopware",
     "plugin"
   ],
   "license": "MIT",
+  "version": "1.0.0",
   "type": "shopware-plugin",
   "extra": {
     "installer-name": "HeptacomEmotionResizer"
