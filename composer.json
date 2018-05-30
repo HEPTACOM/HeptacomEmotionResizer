@@ -1,0 +1,12 @@
+{
+  "name": "heptacom/emotion-resizer",
+  "keywords": [
+    "shopware",
+    "plugin"
+  ],
+  "license": "MIT",
+  "type": "shopware-plugin",
+  "extra": {
+    "installer-name": "HeptacomEmotionResizer"
+  }
+}
