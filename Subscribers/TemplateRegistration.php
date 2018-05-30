@@ -1,6 +1,6 @@
 <?php
 
-namespace KskEmotionResizer\Subscribers;
+namespace HeptacomEmotionResizer\Subscribers;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Enlight\Event\SubscriberInterface;

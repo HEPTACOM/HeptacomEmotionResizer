@@ -1,6 +1,6 @@
 <?php
 
-namespace KskEmotionResizer;
+namespace HeptacomEmotionResizer;
 
 use Exception;
 use Shopware\Bundle\AttributeBundle\Service\CrudService;
@@ -9,9 +9,9 @@ use Shopware\Components\Plugin;
 use Shopware\Components\Plugin\Context\InstallContext;
 use Shopware\Components\Plugin\Context\UpdateContext;
 
-class KskEmotionResizer extends Plugin
+class HeptacomEmotionResizer extends Plugin
 {
-    const ATTRIBUTE_PREFIX = 'ksk_emotion_resizer_';
+    const ATTRIBUTE_PREFIX = 'heptacom_emotion_resizer_';
 
     /**
      * @param InstallContext $context
@@ -39,10 +39,18 @@ class KskEmotionResizer extends Plugin
         /** @var CrudService $crud */
         $crud = $this->container->get('shopware_attribute.crud_service');
 
-        $crud->update('s_emotion_attributes', static::ATTRIBUTE_PREFIX . 'unify_height', TypeMapping::TYPE_BOOLEAN, [
-            'translatable' => false,
-            'displayInBackend' => true,
-            'custom' => false,
-        ], null, null, 0);
+        $crud->update(
+            's_emotion_attributes',
+            static::ATTRIBUTE_PREFIX . 'unify_height',
+            TypeMapping::TYPE_BOOLEAN,
+            [
+                'translatable' => false,
+                'displayInBackend' => true,
+                'custom' => false,
+            ],
+            null,
+            null,
+            0
+        );
     }
 }
