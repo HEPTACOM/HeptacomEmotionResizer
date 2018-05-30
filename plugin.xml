@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.4/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label>Emotion-Resizer</label>
+
+    <version>1.0.0</version>
+    <license>MIT</license>
+    <link>https://www.heptacom.de/</link>
+    <author>HEPTACOM GmbH</author>
+    <compatibility minVersion="5.4.0"/>
+</plugin>
