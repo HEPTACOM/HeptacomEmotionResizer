@@ -13,4 +13,8 @@
         StateManager.updatePlugin('*[data-heptacom-emotion-resizer-unify-height="true"] .emotion--row', 'swPanelAutoResizer');
     });
 
+    $.subscribe('plugin/swEmotion/onInitRowsGrid', function () {
+        StateManager.updatePlugin('*[data-heptacom-emotion-resizer-unify-height="true"] .emotion--row', 'swPanelAutoResizer');
+    });
+
 })(jQuery, window.StateManager);
